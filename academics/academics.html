@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academics | SDSF</title>
+
+  <!-- Global Style -->
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- Page specific style -->
+  <link rel="stylesheet" href="academics.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body id="top">
+
+    <!-- ===== Header / Navbar ===== -->
+    <div id="header"></div>
+
+    <script>
+      fetch("../header.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("header").innerHTML = data;
+        });
+    </script>
+
+    <!-- ⭐⭐⭐ START PAGE CONTENT WRAPPER ⭐⭐⭐ -->
+    <div class="page-content">
+
+      <!-- ===== Hero Section ===== -->
+      <section class="academics-hero">
+        <h2>Academics</h2>
+        <h3>Building the future through Data, Science, and Innovation.</h3>
+        <p>
+          At SDSF, our academic programs are designed to merge theoretical excellence 
+          with practical applications in Data Science, Artificial Intelligence, and Forecasting.
+          We focus on nurturing analytical thinking, technical proficiency, and real-world problem-solving.
+        </p>
+      </section>
+
+      <!-- ===== Courses Section ===== -->
+      <section class="courses-section">
+        <div class="course-left">
+          <h2>Programs We Offer</h2>
+          <p>Explore the range of academic programs available at SDSF, designed to prepare students for success in research, analytics, and technology.</p>
+
+          <ul class="course-list">
+            <li>🎓 B.Sc. in Data Science</li>
+            <li>📊 M.Sc. in Data Science and Forecasting</li>
+            <li>🧠 M.Tech in Artificial Intelligence</li>
+            <li>📈 M.Tech in Machine Learning and Predictive Analytics</li>
+            <li>🔬 Ph.D. in Computational Data Science</li>
+            <li>🧮 Certification in Applied Statistics and Big Data</li>
+            <li>🌐 Online Diploma in Forecasting and Data Analytics</li>
+          </ul>
+        </div>
+
+        <div class="course-right">
+          <img src="ai stuff.png" alt="Academic Programs">
+        </div>
+      </section>
+
+      <!-- ===== Back to Top ===== -->
+      <footer class="footer">
+        <a href="#top" class="back-top">↑ Back to Top</a>
+      </footer>
+
+    </div>
+    <!-- ⭐⭐⭐ END PAGE CONTENT WRAPPER ⭐⭐⭐ -->
+
+</body>
+</html>

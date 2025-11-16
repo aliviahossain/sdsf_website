@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SDSF | School of Data Science and Forecasting</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+  <!-- ===== Header / Navbar ===== -->
+  <div id="header"></div>
+<script>
+  fetch("../header.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("header").innerHTML = data;
+    });
+</script>
+
+ 
+  <!-- ===== Hero Section (Image Slider) ===== -->
+<section class="hero-slider">
+  <div class="slide fade">
+    <img src="photoes/i4.png" alt="Slide 1">
+    <div class="hero-text">
+      <p class="tagline">Empowering Through Analytics</p>
+          <h1 class="code-colored">
+            <span class="c1">Creative</span><br>
+            <span class="c2">& Logical</span><br>
+            <span class="c3">Thinking Ahead.</span>
+          </h1>
+
+      
+    </div>
+  </div>
+
+  <div class="slide fade">
+    <img src="photoes/i1.png" alt="Slide 2">
+    <div class="hero-text">
+      <p class="tagline">Decode. Analyze. Predict.</p>
+      <h1 class="code-colored">
+            <span class="c1">Turning </span><br>
+            <span class="c2">Complex Code</span><br>
+            <span class="c3">into Clarity</span>
+          </h1>
+
+    </div>
+  </div>
+
+  <div class="slide fade">
+    <img src="photoes/i2.png" alt="Slide 3">
+    <div class="hero-text">
+      <p class="tagline">Data is Power</p>
+       <h1 class="code-colored">
+            <span class="c1">Where  </span><br>
+            <span class="c2">Number Speaks </span><br>
+            <span class="c3">& Code Creates</span>
+          </h1>
+    </div>
+  </div>
+
+  <div class="slide fade">
+    <img src="photoes/i3.png" alt="Slide 4">
+    <div class="hero-text">
+      <p class="tagline">Learning Beyond Limits</p>
+       <h1 class="code-colored">
+            <span class="c1">Empopwering</span><br>
+            <span class="c2">Innovators of</span><br>
+            <span class="c3">the Future</span>
+          </h1>
+    </div>
+  </div>
+
+    <!-- Arrow Buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Dots for manual control -->
+  <div class="dots">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+</section>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let slides = document.getElementsByClassName("slide");
+      let dots = document.getElementsByClassName("dot");
+
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+
+      for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 5000);
+    }
+
+    function currentSlide(n) {
+      slideIndex = n - 1;
+      showSlides();
+    }
+
+
+        function plusSlides(n) {
+      slideIndex += n;
+      showSlides();
+    }
+
+  </script>
+
+
+  <!-- ===== News & Events Section ===== -->
+  <section class="news-events">
+    <h2>News & Events</h2>
+    <div class="news-container">
+
+      <!-- 🖼️ PLACE 1 -->
+      <div class="news-card">
+        <a href="#"><img src="" alt="News 1 Image"></a>
+        <h3>News Title 1</h3>
+        <p>Short description for news or event.</p>
+      </div>
+
+      <!-- 🖼️ PLACE 2 -->
+      <div class="news-card">
+        <a href="#"><img src="" alt="News 2 Image"></a>
+        <h3>News Title 2</h3>
+        <p>Short description for news or event.</p>
+      </div>
+
+      <!-- 🖼️ PLACE 3 -->
+      <div class="news-card">
+        <a href="#"><img src="" alt="News 3 Image"></a>
+        <h3>News Title 3</h3>
+        <p>Short description for news or event.</p>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>

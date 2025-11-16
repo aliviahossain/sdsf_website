@@ -1,0 +1,124 @@
+/* ===== GENERAL (scoped only to this page) ===== */
+.page-content * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.page-content {
+  background: #f5f6f7;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ===== HERO SECTION ===== */
+.page-content .about-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 6rem;
+  gap: 2rem;
+  background: #fff;
+}
+
+.page-content .about-text {
+  flex: 1;
+}
+
+.page-content .about-text h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  color: #1b1b1b;
+}
+
+.page-content .about-text h3 {
+  font-size: 1.4rem;
+  color: #2f3a3a;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.page-content .about-text p {
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.page-content .buttons {
+  margin-top: 1.5rem;
+}
+
+.page-content .btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 1rem;
+  transition: 0.3s;
+}
+
+.page-content .btn.primary {
+  background-color: #4a68ff;
+  color: #fff;
+}
+
+.page-content .btn.secondary {
+  border: 1.5px solid #4a68ff;
+  color: #4a68ff;
+}
+
+.page-content .btn.primary:hover {
+  background-color: #3956e6;
+}
+
+.page-content .btn.secondary:hover {
+  background-color: #4a68ff;
+  color: #fff;
+}
+
+/* ===== IMAGE ===== */
+.page-content .about-image img {
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* ===== CONTACT SECTION ===== */
+.page-content .contact-section {
+  background: #f1f2f4;
+  padding: 4rem 6rem;
+  text-align: center;
+}
+
+.page-content .contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #1b1b1b;
+}
+
+.page-content .contact-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.page-content .card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 2rem;
+  width: 280px;
+}
+
+.page-content .card h3 {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.page-content .card p {
+  color: #555;
+  font-size: 0.95rem;
+}

@@ -1,0 +1,192 @@
+/* ===== GENERAL (Scoped) ===== */
+.page-content * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.page-content {
+  background: #f6f7fb;
+  color: #222;
+  line-height: 1.6;
+}
+
+
+/* ===== HERO SECTION ===== */
+.page-content .admission-hero {
+  background: linear-gradient(to bottom, #ffffff, #f0f3ff);
+  text-align: center;
+  padding: 4rem 6rem;
+}
+
+.page-content .admission-hero h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1b1b1b;
+  margin-bottom: 0.5rem;
+}
+
+.page-content .admission-hero h3 {
+  font-size: 1.3rem;
+  color: #4a68ff;
+  margin-bottom: 1.2rem;
+}
+
+.page-content .admission-hero p {
+  color: #444;
+  max-width: 750px;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+
+/* ===== PROGRAMS ===== */
+.page-content .programs-section {
+  background: #fff;
+  padding: 3rem 6rem;
+  text-align: center;
+}
+
+.page-content .programs-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.page-content .program-list {
+  list-style: none;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.page-content .program-list li {
+  font-size: 1.05rem;
+  color: #333;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  transition: 0.3s;
+}
+
+.page-content .program-list li:hover {
+  transform: translateX(6px);
+  color: #4a68ff;
+}
+
+
+/* ===== PROCESS ===== */
+.page-content .process-section {
+  background: #f8f9fb;
+  padding: 4rem 6rem;
+  text-align: center;
+}
+
+.page-content .process-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.page-content .process-steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.page-content .step {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.page-content .step:hover {
+  transform: translateY(-5px);
+}
+
+.page-content .step h3 {
+  color: #4a68ff;
+  margin-bottom: 0.5rem;
+}
+
+
+/* ===== IMPORTANT DATES ===== */
+.page-content .dates-section {
+  padding: 4rem 6rem;
+  background: #fff;
+  text-align: center;
+}
+
+.page-content .dates-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.page-content .date-card {
+  background: #f8f9fb;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  padding: 1.5rem 2rem;
+  width: 230px;
+}
+
+.page-content .date-card h4 {
+  color: #4a68ff;
+  margin-bottom: 0.4rem;
+}
+
+
+/* ===== APPLY SECTION ===== */
+.page-content .apply-section {
+  text-align: center;
+  background: linear-gradient(to right, #4a68ff, #678aff);
+  color: #fff;
+  padding: 3rem 2rem;
+}
+
+.page-content .apply-section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.page-content .apply-btn {
+  display: inline-block;
+  background: #fff;
+  color: #4a68ff;
+  font-weight: 600;
+  padding: 0.8rem 1.8rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.page-content .apply-btn:hover {
+  background: #e8eaff;
+}
+
+
+/* ===== FOOTER ===== */
+.page-content .footer {
+  text-align: center;
+  padding: 2rem;
+  background: #f3f4f8;
+}
+
+.page-content .back-top {
+  color: #4a68ff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.page-content .back-top:hover {
+  text-decoration: underline;
+}

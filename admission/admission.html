@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admission | SDSF</title>
+
+  <!-- GLOBAL style for header/nav -->
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- Page specific style -->
+  <link rel="stylesheet" href="admission.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- ===== GLOBAL HEADER ===== -->
+  <div id="header"></div>
+
+  <script>
+    fetch("../header.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("header").innerHTML = data;
+      });
+  </script>
+
+
+  <!-- ⭐⭐⭐ START PAGE CONTENT WRAPPER ⭐⭐⭐ -->
+  <div class="page-content">
+
+    <!-- ===== Hero Section ===== -->
+    <section class="admission-hero">
+      <h2>Admissions Open 2025</h2>
+      <h3>Start your journey into Data Science and Forecasting with SDSF.</h3>
+      <p>
+        We invite ambitious students who are ready to explore, innovate, and transform data into actionable insights. 
+        Our programs are designed to prepare leaders of tomorrow in AI, ML, and Predictive Analytics.
+      </p>
+    </section>
+
+    <!-- ===== Programs Section ===== -->
+    <section class="programs-section">
+      <h2>Programs Offered</h2>
+      <ul class="program-list">
+        <li>🎓 B.Sc. in Data Science</li>
+        <li>📊 M.Sc. in Data Science and Forecasting</li>
+        <li>🧠 M.Tech in Artificial Intelligence</li>
+        <li>📈 M.Tech in Machine Learning and Predictive Analytics</li>
+        <li>🔬 Ph.D. in Data Science</li>
+      </ul>
+    </section>
+
+    <!-- ===== Admission Process ===== -->
+    <section class="process-section">
+      <h2>Admission Process</h2>
+      <div class="process-steps">
+        <div class="step">
+          <h3>1️⃣ Step 1</h3>
+          <p>Fill out the online registration form on the SDSF admissions portal.</p>
+        </div>
+        <div class="step">
+          <h3>2️⃣ Step 2</h3>
+          <p>Submit academic documents and entrance exam details.</p>
+        </div>
+        <div class="step">
+          <h3>3️⃣ Step 3</h3>
+          <p>Shortlisted candidates will be invited for an interview or counseling round.</p>
+        </div>
+        <div class="step">
+          <h3>4️⃣ Step 4</h3>
+          <p>Pay the admission fees to confirm your seat and join SDSF!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Important Dates ===== -->
+    <section class="dates-section">
+      <h2>Important Dates</h2>
+      <div class="dates-grid">
+        <div class="date-card">
+          <h4>Application Start</h4>
+          <p>1st March 2025</p>
+        </div>
+        <div class="date-card">
+          <h4>Last Date to Apply</h4>
+          <p>15th June 2025</p>
+        </div>
+        <div class="date-card">
+          <h4>Entrance Test</h4>
+          <p>5th July 2025</p>
+        </div>
+        <div class="date-card">
+          <h4>Classes Begin</h4>
+          <p>10th August 2025</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Apply Now Section ===== -->
+    <section class="apply-section">
+      <h2>Apply Now</h2>
+      <p>Take the first step toward a career that blends technology, data, and innovation.</p>
+      <a href="#" class="apply-btn">Apply Online</a>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+      <a href="#top" class="back-top">↑ Back to Top</a>
+    </footer>
+
+  </div>
+  <!-- ⭐⭐⭐ END PAGE CONTENT WRAPPER ⭐⭐⭐ -->
+
+</body>
+</html>

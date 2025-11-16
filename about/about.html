@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | SDSF</title>
+  <!--Global styles (navbar, header, fonts, etc.)-->
+  <link rel="stylesheet" href="../style.css">
+  <!--Page specific style-->
+  <link rel="stylesheet" href="about.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+      <!-- ===== Header / Navbar ===== -->
+      <div id="header"></div>
+
+      <script>
+        fetch("../header.html")
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById("header").innerHTML = data;
+          });
+      </script>
+
+
+      <!--  START WRAPPER HERE  -->
+      <div class="page-content">
+
+
+      <!-- ===== Hero Section ===== -->
+      <section class="about-hero">
+        <div class="about-text">
+          <h2>We are a dynamic team of thinkers and builders</h2>
+          <h3>dedicated to advancing the future of Data Science & Forecasting.</h3>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Curabitur non risus eu erat posuere elementum. 
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; 
+            Integer at erat vitae lacus congue tempor in id ipsum. 
+            Donec ut nisl eros. Nulla facilisi. 
+          </p>
+
+          <p>
+            At SDSF, we aim to build data-driven solutions, foster innovative research, 
+            and empower the next generation of scientists through creativity, collaboration, and analytics.
+          </p>
+
+          <div class="buttons">
+            <a href="#" class="btn primary">Our Programs</a>
+            <a href="#" class="btn secondary">Meet Our Team</a>
+          </div>
+        </div>
+
+        <div class="about-image">
+          <img src="castle.png" alt="About SDSF">
+        </div>
+      </section>
+
+      <!-- ===== Contact Section ===== -->
+      <section class="contact-section">
+        <h2>Contact Us</h2>
+
+        <div class="contact-cards">
+          <div class="card">
+            <h3>Dr. Shishir K. Sir</h3>
+            <p>Email: xyx@sdsf.ac.in</p>
+            <p>Phone: +91 22222 22222</p>
+          </div>
+
+          <div class="card">
+            <h3>Prof. ABCD </h3>
+            <p>Email: abcd@sdsf.ac.in</p>
+            <p>Phone: +91 56787 77890</p>
+          </div>
+
+          <div class="card">
+            <h3>Admin Office</h3>
+            <p>Email: admin@sdsf.ac.in</p>
+            <p>Phone: +91 90000 00000</p>
+          </div>
+        </div>
+      </section>
+
+      </div>
+      <!-- ⭐⭐⭐ END WRAPPER HERE ⭐⭐⭐ -->
+
+</body>
+</html>
