@@ -6,29 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admission | SDSF</title>
     <link rel="stylesheet" href="admission.css">
+    <link rel="stylesheet" href="../style.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body id="top">
 
-    <header class="navbar" id="navbar">
-        <div class="navbar-left">
-            <img src="../photoes/sdsf_logo.jpg" alt="SDSF Logo" class="logo">
-            <div class="title-text">
-                <h1>SDSF</h1>
-                <p>School of Data Science and Forecasting</p>
-            </div>
-        </div>
+        <!-- ===== Header / Navbar ===== -->
+       
 
-        <nav class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="faculty.html">Faculty</a>
-            <a href="academics.html">Academics</a>
-            <a href="admission.html" class="active">Admission</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+                    <div id="header"></div>
+            <script>
+            fetch("../header.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("header").innerHTML = data);
+            </script>
+
 
     <section class="admission-hero">
         <div class="hero-content">
