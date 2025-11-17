@@ -1,118 +1,225 @@
+<!--Code contributed by Alivia Hossain, SDSF AI/DS,Sem 1-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admission | SDSF</title>
-
-  <!-- GLOBAL style for header/nav -->
-  <link rel="stylesheet" href="../style.css">
-
-  <!-- Page specific style -->
-  <link rel="stylesheet" href="admission.css">
-
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission | SDSF</title>
+    <link rel="stylesheet" href="admission.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body id="top">
 
-  <!-- ===== GLOBAL HEADER ===== -->
-  <div id="header"></div>
+    <header class="navbar" id="navbar">
+        <div class="navbar-left">
+            <img src="../photoes/sdsf_logo.jpg" alt="SDSF Logo" class="logo">
+            <div class="title-text">
+                <h1>SDSF</h1>
+                <p>School of Data Science and Forecasting</p>
+            </div>
+        </div>
 
-  <script>
-    fetch("../header.html")
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById("header").innerHTML = data;
-      });
-  </script>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="faculty.html">Faculty</a>
+            <a href="academics.html">Academics</a>
+            <a href="admission.html" class="active">Admission</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
-
-  <!-- ⭐⭐⭐ START PAGE CONTENT WRAPPER ⭐⭐⭐ -->
-  <div class="page-content">
-
-    <!-- ===== Hero Section ===== -->
     <section class="admission-hero">
-      <h2>Admissions Open 2025</h2>
-      <h3>Start your journey into Data Science and Forecasting with SDSF.</h3>
-      <p>
-        We invite ambitious students who are ready to explore, innovate, and transform data into actionable insights. 
-        Our programs are designed to prepare leaders of tomorrow in AI, ML, and Predictive Analytics.
-      </p>
+        <div class="hero-content">
+            <h2>Admissions Open 2025</h2>
+            <h3>Start your journey into Data Science and Forecasting with SDSF.</h3>
+            <p>We invite ambitious students who are ready to explore, innovate, and transform data into actionable insights.
+                Our programs are designed to prepare leaders of tomorrow in AI, ML, and Predictive Analytics.</p>
+        </div>
     </section>
 
-    <!-- ===== Programs Section ===== -->
     <section class="programs-section">
-      <h2>Programs Offered</h2>
-      <ul class="program-list">
-        <li>🎓 B.Sc. in Data Science</li>
-        <li>📊 M.Sc. in Data Science and Forecasting</li>
-        <li>🧠 M.Tech in Artificial Intelligence</li>
-        <li>📈 M.Tech in Machine Learning and Predictive Analytics</li>
-        <li>🔬 Ph.D. in Data Science</li>
-      </ul>
+        <h2>Programs Offered</h2>
+
+        <div class="program-type">
+            <h3>CUET Programs</h3>
+            <div class="program-grid">
+                <div class="program-card reveal">
+                    <img src="https://images.unsplash.com/photo-1608222351212-18fe0ec7b13b?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="MBA (Business Analytics) CUET PG">
+                    <div class="program-card-content">
+                        <h4>MBA (Business Analytics)</h4>
+                        <p>CUET PG 2 Yrs</p>
+                    </div>
+                </div>
+                <div class="program-card reveal">
+                    <img src="https://plus.unsplash.com/premium_photo-1682124710157-d1573373a4f5?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="M. Tech (Dual Degree) Artificial Intelligence & Data Science CUET UG">
+                    <div class="program-card-content">
+                        <h4>M. Tech (Dual Degree) Artificial Intelligence & Data Science</h4>
+                        <p>CUET UG 5 Yrs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="program-type">
+            <h3>Non-CUET Programs</h3>
+            <div class="program-grid">
+                <div class="program-card reveal">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop" alt="M.Sc. (Data Science & Analytics) Non CUET PG">
+                    <div class="program-card-content">
+                        <h4>M.Sc. (Data Science & Analytics)</h4>
+                        <p>Non CUET PG 2 Yrs</p>
+                    </div>
+                </div>
+                <div class="program-card reveal">
+                    <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?q=80&w=2070&auto=format&fit=crop" alt="M. Tech. (Data Science) Non CUET PG (AICTE Approved)">
+                    <div class="program-card-content">
+                        <h4>M. Tech. (Data Science)</h4>
+                        <p>Non CUET PG 2 Yrs (AICTE Approved)</p>
+                    </div>
+                </div>
+                <div class="program-card reveal">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop" alt="M. Tech. (Big Data Analytics) Non CUET PG (AICTE Approved)">
+                    <div class="program-card-content">
+                        <h4>M. Tech. (Big Data Analytics)</h4>
+                        <p>Non CUET PG 2 Yrs (AICTE Approved)</p>
+                    </div>
+                </div>
+                <div class="program-card reveal">
+                    <img src="https://images.unsplash.com/photo-1557562645-4eee56b29bc1?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="M. Tech. Executives (Data Science) Non CUET PG">
+                    <div class="program-card-content">
+                        <h4>M. Tech. Executives (Data Science)</h4>
+                        <p>Non CUET PG 2 Yrs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- ===== Admission Process ===== -->
-    <section class="process-section">
-      <h2>Admission Process</h2>
-      <div class="process-steps">
-        <div class="step">
-          <h3>1️⃣ Step 1</h3>
-          <p>Fill out the online registration form on the SDSF admissions portal.</p>
+    <section class="detailed-admission-info reveal">
+        <h2>Detailed Admission Information</h2>
+        <div class="info-table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>S. No.</th>
+                        <th>Name of Programme <br> Mode of Admission</th>
+                        <th>Eligibility</th>
+                        <th>Total Students Fee (Rs)</th>
+                        <th>Services Fee (Rs)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01.</td>
+                        <td>MBA (Business Analytics) <br> CUET PG 2 Yrs</td>
+                        <td>Higher Secondary (10+2) with Mathematics as a subject + Any Bachelor degree with at least 50% marks in aggregate or an equivalent grade for General/OBC candidates, and 45% marks in aggregate or an equivalent grade for SC/ST and Differently Abled (DA) category candidates from a recognized University / Institute.</td>
+                        <td>100500/- Per Year</td>
+                        <td>7450 Boys <br> 7010 Girls</td>
+                    </tr>
+                    <tr>
+                        <td>02.</td>
+                        <td>M. Tech (Dual Degree) <br> Artificial Intelligence & Data Science <br> CUET UG 5 Yrs</td>
+                        <td>Higher Secondary (10+2) with Science stream and Mathematics as a subject with at least 50% marks in aggregate or an equivalent grade for General/OBC candidates, and 45% marks in aggregate or an equivalent grade for SC/ST and Differently Abled (DA) category candidates from a recognized Board.</td>
+                        <td>76500/- Per Year</td>
+                        <td>7450 Boys <br> 7010 Girls</td>
+                    </tr>
+                    <tr>
+                        <td>03.</td>
+                        <td>M.Sc. (Data Science & Analytics) <br> Non CUET PG 2 Yrs</td>
+                        <td>Bachelor degree with Mathematics / Statistics / Computer Science as one of the main subject OR B.E./ B.Tech. in any discipline with at least 50% marks in aggregate or an equivalent grade for General / OBC candidates, and 45% marks in aggregate or an equivalent grade for SC/ST and Differently Abled (DA) category candidates from a recognized University/Institute.</td>
+                        <td>61500/- Per Year</td>
+                        <td>7450 Boys <br> 7010 Girls</td>
+                    </tr>
+                    <tr>
+                        <td>04.</td>
+                        <td>M. Tech. (Data Science) <br> Non CUET PG 2 Yrs <br> (AICTE Approved)</td>
+                        <td>At least 55% aggregate marks in B.E./B.Tech. in any relevant branch of Engineering or Masters degree in Physics / Mathematics/ Statistics / Computer Science or any other equivalent degree. Relaxation of 5% marks in eligibility for sponsored/SC/ST candidates.</td>
+                        <td>33000/- Per Year</td>
+                        <td>7450 Boys <br> 7010 Girls</td>
+                    </tr>
+                    <tr>
+                        <td>05.</td>
+                        <td>M. Tech. (Big Data Analytics) <br> Non CUET PG 2 Yrs <br> (AICTE Approved)</td>
+                        <td>At least 55% aggregate marks in B.E./B.Tech. in any relevant branch of Engineering or Masters degree in Physics / Mathematics/ Statistics / Computer Science or any other equivalent degree. Relaxation of 5% marks in eligibility for sponsored/SC/ST candidates.</td>
+                        <td>33000/- Per Year</td>
+                        <td>7450 Boys <br> 7010 Girls</td>
+                    </tr>
+                    <tr>
+                        <td>06.</td>
+                        <td>M. Tech. Executives <br> (Data Science) <br> Non CUET PG 2 Yrs</td>
+                        <td>The candidate should have at least 55% aggregate marks in B.E. / B.Tech./ M.Sc. in a relevant subject or any other equivalent degree (including M.C.A.) from a recognised University. Relaxation of 5% marks in eligibility for SC/ ST candidates. Relevant subjects for admission in M.Tech. Data Science, are CS/CSE/IT/Maths/Physics/ Statistics/ Computer Applications or other computer related subjects.</td>
+                        <td>60500/- Per Year</td>
+                        <td>7450 Boys <br> 7010 Girls</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <div class="step">
-          <h3>2️⃣ Step 2</h3>
-          <p>Submit academic documents and entrance exam details.</p>
+        <div class="notes reveal">
+            <h4>Important Notes:</h4>
+            <p>(1) Caution Money for Every Course shall be paid once Rs. 4000 uniformly.</p>
+            <p>(2) Alumni Fee Rs. 500/- once at time of admission.</p>
+            <p>Web : <a href="www.dauniv.ac.in" target="_blank">www.dauniv.ac.in</a> | Contact : <a href="tel:9827741918">9827741918</a></p>
         </div>
-        <div class="step">
-          <h3>3️⃣ Step 3</h3>
-          <p>Shortlisted candidates will be invited for an interview or counseling round.</p>
-        </div>
-        <div class="step">
-          <h3>4️⃣ Step 4</h3>
-          <p>Pay the admission fees to confirm your seat and join SDSF!</p>
-        </div>
-      </div>
     </section>
 
-    <!-- ===== Important Dates ===== -->
-    <section class="dates-section">
-      <h2>Important Dates</h2>
-      <div class="dates-grid">
-        <div class="date-card">
-          <h4>Application Start</h4>
-          <p>1st March 2025</p>
+    <section class="process-section reveal">
+        <h2>Admission Process</h2>
+        <div class="process-steps">
+            <div class="step reveal">
+                <h3>📝 Step 1</h3> <p>Fill out the online registration form on the SDSF admissions portal.</p>
+            </div>
+            <div class="step reveal">
+                <h3>📂 Step 2</h3> <p>Submit academic documents and entrance exam details.</p>
+            </div>
+            <div class="step reveal">
+                <h3>🧑‍💻 Step 3</h3> <p>Shortlisted candidates will be invited for an interview or counseling round.</p>
+            </div>
+            <div class="step reveal">
+                <h3>💰 Step 4</h3> <p>Pay the admission fees to confirm your seat and join SDSF!</p>
+            </div>
         </div>
-        <div class="date-card">
-          <h4>Last Date to Apply</h4>
-          <p>15th June 2025</p>
-        </div>
-        <div class="date-card">
-          <h4>Entrance Test</h4>
-          <p>5th July 2025</p>
-        </div>
-        <div class="date-card">
-          <h4>Classes Begin</h4>
-          <p>10th August 2025</p>
-        </div>
-      </div>
     </section>
 
-    <!-- ===== Apply Now Section ===== -->
-    <section class="apply-section">
-      <h2>Apply Now</h2>
-      <p>Take the first step toward a career that blends technology, data, and innovation.</p>
-      <a href="#" class="apply-btn">Apply Online</a>
+    <section class="dates-section reveal">
+        <h2>Important Dates</h2>
+        <div class="dates-grid">
+            <div class="date-card reveal">
+                <h4>🚀 Application Start</h4> <p>1st March 2025</p>
+            </div>
+            <div class="date-card reveal">
+                <h4>⏳ Last Date to Apply</h4> <p>15th June 2025</p>
+            </div>
+            <div class="date-card reveal">
+                <h4>✍️ Entrance Test</h4> <p>5th July 2025</p>
+            </div>
+            <div class="date-card reveal">
+                <h4>🎓 Classes Begin</h4> <p>10th August 2025</p>
+            </div>
+        </div>
     </section>
 
-    <!-- ===== Footer ===== -->
+    <section class="apply-section cuet-apply-section reveal">
+        <div class="apply-content">
+            <h2>Apply Now for CUET Programs</h2>
+            <p>Start your application for programs requiring CUET scores. Take the first step toward a career that blends technology, data, and innovation.</p>
+            <a href="#" class="apply-btn">Apply Online (CUET)</a>
+        </div>
+    </section>
+
+    <section class="apply-section non-cuet-apply-section reveal">
+        <div class="apply-content">
+            <h2>Apply Now for Non-CUET Programs</h2>
+            <p>Explore and apply for programs that do not require CUET scores. Your journey into Data Science and Forecasting begins here.</p>
+            <a href="#" class="apply-btn">Apply Online (Non-CUET)</a>
+        </div>
+    </section>
+
     <footer class="footer">
-      <a href="#top" class="back-top">↑ Back to Top</a>
+        <a href="#top" class="back-top">↑ Back to Top</a>
     </footer>
 
-  </div>
-  <!-- ⭐⭐⭐ END PAGE CONTENT WRAPPER ⭐⭐⭐ -->
-
+    <script src="admission.js"></script>
 </body>
 </html>
