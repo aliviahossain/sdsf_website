@@ -231,7 +231,9 @@ body {
   font-size: 0.9rem;
 }
 
-.hero-text h1 {
+
+/* Only apply coding font to HOME PAGE slider, not every hero on whole site */
+.hero-slider .hero-text h1 {
   font-family: Consolas, "Courier New", monospace !important;
 }
 
