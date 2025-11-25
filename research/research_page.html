@@ -12,26 +12,13 @@
 
 <body id="top">
 
-  <!-- ===== Navbar ===== -->
-  <header class="navbar">
-    <img src="https://www.dauniv.ac.in/newassets/images/davvLogo.png" alt="DAVV Logo" class="davv-logo">
-    <div class="navbar-left">
-      <img src="sdsf logo.jpg" alt="SDSF Logo" class="clg-logo">
-      <div class="title-text">
-        <h1>SDSF</h1>
-        <p>School of Data Science and Forecasting</p>
-      </div>
-    </div>
+ <div id="header"></div>
+    <script>
+        fetch("../header.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("header").innerHTML = data);
+    </script>
 
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="faculty.html">Faculty</a>
-      <a href="academics.html">Academics</a>
-      <a href="research.html" class="active">Research</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
 
   <!-- ===== Hero Section ===== -->
   <section class="research-hero">
