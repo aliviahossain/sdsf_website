@@ -1,76 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Faculty | SDSF</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty | SDSF</title>
 
-  <!-- Global Navbar/Header Styles -->
-  <link rel="stylesheet" href="../style.css">
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="../style.css">
 
-  <!-- Page Specific Styles -->
-  <link rel="stylesheet" href="faculty.css">
+    <!-- Faculty Page Styles -->
+    <link rel="stylesheet" href="faculty.css">
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body id="top">
+<body>
 
-  <!-- ===== GLOBAL HEADER ===== -->
-  <div id="header"></div>
+    <!-- HEADER -->
+    <div id="header"></div>
+    <script>
+        fetch("../header.html")
+          .then(res => res.text())
+          .then(data => document.getElementById("header").innerHTML = data);
+    </script>
 
-  <script>
-    fetch("../header.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("header").innerHTML = data;
-      });
-  </script>
+    <!-- WRAPPER -->
+    <div class="faculty-wrapper">
 
-  <!-- ⭐⭐⭐ START PAGE CONTENT WRAPPER ⭐⭐⭐ -->
-  <div class="page-content">
+        <h1 class="faculty-title">Meet Our Faculty</h1>
+        <div class="title-underline"></div>
 
-    <!-- ===== Hero Section ===== -->
-    <section class="faculty-hero">
-      <h2>Meet Our Faculty</h2>
-      <h3>We build knowledge. Not just courses.</h3>
-      <p>
-        Our distinguished faculty members bring together academic excellence, 
-        research expertise, and industry experience to shape the future of Data Science and Forecasting.
-      </p>
-    </section>
+        <!-- Faculty List Section -->
+        <section class="faculty-section">
 
-    <!-- ===== Faculty List Section ===== -->
-    <section class="faculty-list">
-      <div class="faculty-card">
-        <img src="images/faculty1.jpg" alt="Dr. Riya Sharma">
-        <h3>Dr. Riya Sharma</h3>
-        <p>Professor & Head of Department</p>
-        <p>Email: riya.sharma@sdsf.ac.in</p>
-      </div>
+            <!-- Faculty 1 -->
+            <div class="faculty-card fade-in">
+                <div class="faculty-photo">Photo</div>
+                <div class="faculty-info">
+                    <h2>Dr. Sanjiv Tokekar</h2>
+                    <p><strong>Position:</strong> Head</p>
+                    <p><strong>Specialisation:</strong> Specialisation</p>
+                    <p><strong>Phone:</strong> +91 731 2470330 (O)</p>
+                    <p><strong>Email:</strong> Email</p>
+                </div>
+            </div>
 
-      <div class="faculty-card">
-        <img src="images/faculty2.jpg" alt="Dr. Arjun Mehta">
-        <h3>Dr. Arjun Mehta</h3>
-        <p>Associate Professor (AI & ML)</p>
-        <p>Email: arjun.mehta@sdsf.ac.in</p>
-      </div>
 
-      <div class="faculty-card">
-        <img src="images/faculty3.jpg" alt="Dr. Priya Nair">
-        <h3>Dr. Priya Nair</h3>
-        <p>Assistant Professor (Data Analytics)</p>
-        <p>Email: priya.nair@sdsf.ac.in</p>
-      </div>
-    </section>
+             <!-- Faculty 2 -->
+            <div class="faculty-card fade-in">
+                <div class="faculty-photo">Photo</div>
+                <div class="faculty-info">
+                    <h2>Dr. Shishir Kumar Shandilya</h2>
+                    <p><strong>Position:</strong> Associate Professor</p>
+                    <p><strong>Specialisation:</strong> Data Privacy, Data Security, Nature-inspired Cyber Security</p>
+                    <p><strong>Phone:</strong> +91 9009972032 (M)</p>
+                    <p><strong>Email:</strong> shishir.davv@gmail.com</p>
+                </div>
+            </div>
 
-    <!-- ===== Footer ===== -->
-    <footer class="footer">
-      <a href="#top" class="back-top">↑ Back to Top</a>
-    </footer>
+            <!-- Faculty 3 -->
+            <div class="faculty-card fade-in">
+                <div class="faculty-photo">Photo</div>
+                <div class="faculty-info">
+                    <h2>Dr. Vandit Hedau</h2>
+                    <p><strong>Position:</strong> Associate Professor</p>
+                    <p><strong>Specialisation:</strong> Supply Chain Management, Systems Engineering, Technology Management, Project Management</p>
+                    <p><strong>Phone:</strong> +91 731 2470330 (O); +91 98277 41918 (M)</p>
+                    <p><strong>Email:</strong> vhedau.fsp@dauniv.ac.in; vanditfsp@gmail.com</p>
+                </div>
+            </div>
 
-  </div>
-  <!-- ⭐⭐⭐ END PAGE CONTENT WRAPPER ⭐⭐⭐ -->
+           
+
+            <!-- Faculty 4 -->
+            <div class="faculty-card fade-in">
+                <div class="faculty-photo">Photo</div>
+                <div class="faculty-info">
+                    <h2>Dr. Anupam Jain</h2>
+                    <p><strong>Position:</strong> Professor</p>
+                    <p><strong>Specialisation:</strong> Ancient Indian Mathematics, Operations Research</p>
+                    <p><strong>Phone:</strong> +91 94250 53822, +91 95898 83822 (M)</p>
+                    <p><strong>Email:</strong> anupamjain3@rediffmail.com</p>
+                    <p><strong>Director – Centre of Research in Ancient Indian Mathematics</strong></p>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <!-- ANIMATION SCRIPT -->
+    <script src="faculty.js"></script>
 
 </body>
 </html>

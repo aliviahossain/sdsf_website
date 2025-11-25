@@ -78,73 +78,9 @@ html {
   border-radius: 10px;
 }
 
-/* ===== CARD LAYOUT ===== */
-.explore-cards {
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-/* Card Container Layout */
-.explore-cards-image {
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
-  flex-wrap: wrap;
-  margin-top: 3rem;
-}
-
-/* Each Card */
-.program-card {
-  width: 31%;
-  min-width: 280px;
-  background: #ffffff;
-  border-radius: 14px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-  overflow: hidden;               /* keeps image rounded */
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.program-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 15px 25px rgba(0,0,0,0.15);
-}
-
-/* Top Image */
-.program-img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-/* Bottom Text Section */
-.program-info {
-  padding: 1.8rem 1rem;
-  text-align: center;
-}
-
-.program-info h3 {
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: #222;
-}
-
-.program-info p {
-  margin-top: 0.6rem;
-  font-size: 1rem;
-  color: #666;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .program-card {
-    width: 100%;
-  }
-}
 
 
-/* is the below section after the cards !" */
+/* About SDSF */
 /* SECTION WITH IMAGE + OVERLAY */
 .soft-background-section {
     position: relative;
@@ -209,5 +145,304 @@ html {
 .next-section p {
     font-size: 1.1rem;
     color: #555;
+}
+
+
+
+/*Introduction, Vision and Mission stuffs */
+.about-card {
+  width: 95%;
+  margin: 20px auto;
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+  border-left: 6px solid #5368F5;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.about-card:hover {
+  transform: translateY(-3px);
+}
+
+.about-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-header h3 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.toggle-icon {
+  font-size: 2rem;
+  color: #333;
+  transition: 0.3s;
+}
+
+.about-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.4s ease;
+  padding-left: 5px;
+}
+
+.about-card.active .about-content {
+  max-height: 500px;
+  opacity: 1;
+  margin-top: 12px;
+}
+
+.about-card.active .toggle-icon {
+  transform: rotate(45deg);
+}
+
+
+
+/*stuffs from program philosophy  */
+
+
+/* --- Hero Section --- */
+.hero-section {
+    padding: 100px 40px;
+    text-align: center;
+    background-color: #e6f7ff;
+    border-bottom: 5px solid #ff9900;
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero-content h2 {
+    font-size: 3.5em;
+    font-weight: 900;
+    margin-bottom: 15px;
+    color: #004d99;
+}
+
+.hero-content p {
+    font-size: 1.3em;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    padding: 12px 30px;
+    font-size: 1.1em;
+    font-weight: 700;
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(255, 153, 0, 0.4);
+}
+
+.cta-button:hover {
+    background-color: #e68a00;
+    transform: translateY(-2px);
+}
+
+.content-container {
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2.5em;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #004d99;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #ff9900;
+    margin: 10px auto 0;
+}
+
+.module-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.module {
+    background-color: #fcfcfc;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s;
+}
+
+.module:hover {
+    border-color: #004d99;
+}
+
+.module h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 700;
+    border-left: 5px solid #004d99;
+    padding-left: 10px;
+}
+
+.module-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.module-list li {
+    font-size: 1.05em;
+    margin-bottom: 12px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.module-list li::before {
+    content: '✓';
+    color: #ff9900;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.quotes-module {
+    text-align: center;
+    padding: 40px 0;
+    margin-bottom: 50px;
+    border: 2px dashed #004d9950;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.quote-box {
+    max-width: 800px;
+    margin: 0 auto 15px;
+    font-size: 1.6em;
+    font-style: italic;
+    color: #004d99;
+}
+
+.quote-author {
+    font-size: 1.1em;
+    color: #ff9900;
+    font-weight: 700;
+}
+
+.faq-item {
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+    border-left: 4px solid #ff9900;
+}
+
+.faq-item h4 {
+    color: #004d99;
+    font-size: 1.25em;
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.curriculum-accordion {
+    max-width: 900px;
+    margin: 0 auto 50px;
+}
+
+.semester-item {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+}
+
+.semester-header {
+    background-color: #e6f0f8;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.1em;
+    color: #004d99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+.semester-header:hover {
+    background-color: #d8e8f8;
+}
+
+.semester-toggle {
+    font-size: 1.2em;
+    transition: transform 0.3s;
+}
+
+.semester-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+    background-color: white;
+    padding: 0 20px;
+}
+
+.semester-content.active {
+    max-height: 1000px;
+    padding: 20px;
+}
+
+.semester-content h4 {
+    color: #ff9900;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 5px;
+}
+
+.course-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+
+.course-table th,
+.course-table td {
+    padding: 10px 15px;
+    text-align: left;
+    border: 1px solid #f0f0f5;
+}
+
+.course-table th {
+    background-color: #f0f0f5;
+    color: #333;
+    font-weight: 600;
+}
+
+.course-table tr:nth-child(even) {
+    background-color: #fcfcfc;
 }
 
