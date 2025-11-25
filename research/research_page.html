@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research | SDSF</title>
+  <script src="research_page_js.js"></script>
+  <link rel="stylesheet" href="research_page.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- ===== Navbar ===== -->
+  <header class="navbar">
+    <img src="https://www.dauniv.ac.in/newassets/images/davvLogo.png" alt="DAVV Logo" class="davv-logo">
+    <div class="navbar-left">
+      <img src="sdsf logo.jpg" alt="SDSF Logo" class="clg-logo">
+      <div class="title-text">
+        <h1>SDSF</h1>
+        <p>School of Data Science and Forecasting</p>
+      </div>
+    </div>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="faculty.html">Faculty</a>
+      <a href="academics.html">Academics</a>
+      <a href="research.html" class="active">Research</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="research-hero">
+    <h2>Research Excellence</h2>
+    <h3>Pushing the boundaries of knowledge through innovation and discovery.</h3>
+    <p>
+      At SDSF, we are committed to advancing research in Data Science, Machine Learning,
+      Environmental Management, and Forecasting. Our interdisciplinary approach combines
+      theoretical excellence with practical applications to address real-world challenges.
+    </p>
+  </section>
+
+  <!-- ===== Research Stats ===== -->
+  <section class="stats-section">
+    <div class="stat-card" onclick="scrollToSection('supervisors-section')">
+      <div class="stat-number">8</div>
+      <div class="stat-label">Research Supervisors</div>
+    </div>
+    <div class="stat-card" onclick="scrollToSection('phd-section')">
+      <div class="stat-number">47</div>
+      <div class="stat-label">Ph.D.s Awarded</div>
+    </div>
+    <!-- <div class="stat-card" onclick="scrollToSection('publications-section')">
+      <div class="stat-number">86+</div>
+      <div class="stat-label">Publications</div>
+    </div> -->
+    <div class="stat-card" onclick="scrollToSection('projects-section')">
+      <div class="stat-number">8</div>
+      <div class="stat-label">Funded Projects</div>
+    </div>
+  </section>
+
+  <!-- ===== Research Areas ===== -->
+  <section class="research-areas">
+    <h2>Research Areas</h2>
+    <p class="section-subtitle">Exploring diverse domains to create innovative solutions</p>
+
+    <div class="areas-grid">
+      <div class="area-card">
+        <div class="area-icon">📊</div>
+        <h3>Data Science</h3>
+        <p>Advanced analytics and data-driven decision making</p>
+      </div>
+      <div class="area-card">
+        <div class="area-icon">🤖</div>
+        <h3>Machine Learning</h3>
+        <p>Intelligent systems and predictive modeling</p>
+      </div>
+      <div class="area-card">
+        <div class="area-icon">🎯</div>
+        <h3>Decision Sciences</h3>
+        <p>Optimization and strategic planning</p>
+      </div>
+      <div class="area-card">
+        <div class="area-icon">🌱</div>
+        <h3>Environmental Management</h3>
+        <p>Sustainable development and climate modeling</p>
+      </div>
+      <div class="area-card">
+        <div class="area-icon">📈</div>
+        <h3>Modelling & Simulation</h3>
+        <p>System dynamics and forecasting</p>
+      </div>
+      <div class="area-card">
+        <div class="area-icon">⚙️</div>
+        <h3>Technology Management</h3>
+        <p>Innovation and technology assessment</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Tab Navigation ===== -->
+  <section class="research-tabs">
+    <div class="tabs-container">
+      <button class="tab-btn active" onclick="openTab('phd-section')">Ph.D.s Awarded</button>
+      <button class="tab-btn" onclick="openTab('supervisors-section')">Supervisors</button>
+      <button class="tab-btn" onclick="openTab('publications-section')">Publications</button>
+      <button class="tab-btn" onclick="openTab('projects-section')">Projects</button>
+    </div>
+  </section>
+
+  <!-- ===== Ph.D. Awarded Section ===== -->
+  <section id="phd-section" class="content-section active">
+    <div class="section-header">
+      <h2>Ph.D.s Awarded</h2>
+      <p>47 doctoral degrees awarded since 1998</p>
+    </div>
+
+    <div class="search-container">
+      <input type="text" id="phd-search" placeholder="🔍 Search by name, supervisor, or title..."
+        onkeyup="filterPhDs()">
+    </div>
+
+    <div class="phd-grid" id="phd-list">
+      <!-- Ph.D. cards will be populated by JavaScript -->
+    </div>
+  </section>
+
+  <!-- ===== Supervisors Section ===== -->
+  <section id="supervisors-section" class="content-section">
+    <div class="section-header">
+      <h2>Research Supervisors</h2>
+      <p>Expert faculty guiding doctoral research</p>
+    </div>
+
+    <div class="supervisors-grid" id="supervisors-list">
+      <!-- Supervisor cards will be populated by JavaScript -->
+    </div>
+  </section>
+
+  <!-- ===== Publications Section ===== -->
+  <section id="publications-section" class="content-section">
+    <div class="section-header">
+      <h2>Research Publications</h2>
+      <p>Contributing to global knowledge through quality research</p>
+    </div>
+
+    <div class="filter-container">
+      <button class="filter-btn active" onclick="filterPublications('all')">All</button>
+      <button class="filter-btn" onclick="filterPublications('journals')">Journals</button>
+      <button class="filter-btn" onclick="filterPublications('conferences')">Conferences</button>
+      <button class="filter-btn" onclick="filterPublications('books')">Book Chapters</button>
+    </div>
+
+    <div class="search-container">
+      <input type="text" id="pub-search" placeholder="🔍 Search publications..." onkeyup="filterPubs()">
+    </div>
+
+    <div class="publications-list" id="publications-list">
+      <!-- Publications will be populated by JavaScript -->
+    </div>
+  </section>
+
+  <!-- ===== Projects Section ===== -->
+  <section id="projects-section" class="content-section">
+    <div class="section-header">
+      <h2>Research Projects</h2>
+      <p>Funded research initiatives driving innovation</p>
+    </div>
+
+    <div class="projects-grid" id="projects-list">
+      <!-- Projects will be populated by JavaScript -->
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <a href="#top" class="back-top">↑ Back to Top</a>
+  </footer>
+
+  <script src="research_page.js"></script>
+
+</body>
+
+</html>
